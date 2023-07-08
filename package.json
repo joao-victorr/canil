@@ -2,10 +2,10 @@
   "name": "canil",
   "version": "1.0.0",
   "description": "Projeto feito em aula no curso da B7Web",
-  "main": "index.ts",
+  "main": "server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodomon -e ts,json,mustache,env src/server.ts"
+    "start": "nodemon -e ts,json,mustache ./src/server.ts"
   },
   "author": "Joao",
   "license": "ISC",
