@@ -12,10 +12,10 @@ const server = express();
 
 
 server.set('view engine', 'mustache');
-server.set('view', path.join(__dirname, 'views'));
+server.set('views', path.join(__dirname, 'views'));
 server.engine('mustache', Mustache());
 
-server.use('/public', express.static(path.join(__dirname, '../public')));
+server.use('/', express.static(path.join(__dirname, '../public')));
 
 //Rotas
 server.use(mainRoutes);
